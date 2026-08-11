@@ -105,9 +105,8 @@ Record your answers in `ANSWERS.md` as you work. Include the names of everyone w
     In `main`, declare a `unique_ptr` to your class type inside a nested block (a pair of braces within `main`), initialized with the address of an object of your class type returned by `new`. Print a message immediately before and after the closing brace of that block.
 
     Build and run your program. In your answers:
-    
-  - show the output your program produced
-  - explain what caused the destructor to run, and contrast this with the `delete` calls you had to write explicitly in Exercise 3
+   - show the output your program produced    
+   - explain what caused the destructor to run, and contrast this with the `delete` calls you had to write explicitly in Exercise 3
 
 ## Deliverables
 
