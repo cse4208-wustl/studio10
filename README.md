@@ -51,7 +51,7 @@ Record your answers in `ANSWERS.md` as you work. Include the names of everyone w
 
    In `main`, declare a `shared_ptr` parameterized with your class type and initialize it with `make_shared` taking no arguments. Declare another `shared_ptr` parameterized with your class type and initialize it with `make_shared` using a dereference of the first `shared_ptr` as its only argument.
 
-   Build and run your program, and confirm that it produced the same output as in the previous exercise.
+   Build and run your program, and confirm that it produced the same output as in the first exercise.
 
    In your answers, show the statements that declare and initialize the `shared_ptr` variables in `main`.
 
