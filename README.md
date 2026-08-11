@@ -37,7 +37,6 @@ Record your answers in `ANSWERS.md` as you work. Include the names of everyone w
    Build and run your program. In your answers, show:
 
    - the output your program produced
-   - the declarations and definitions for the class you wrote
    - the code for your program's `main` function
 
 3. Remove the contents of `main` except for the statement at the end that returns a success value.
