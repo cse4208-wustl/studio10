@@ -95,7 +95,7 @@ Record your answers in `ANSWERS.md` as you work. Include the names of everyone w
 
     Pass the second `unique_ptr` into the function you just defined to invoke the public member function through it, then attempt to do the same using the first `unique_ptr`.
 
-   Build and run your program. In your answers:
+    Build and run your program. In your answers:
    
    - show the output your program produced
    - explain what happened when you tried to use the first `unique_ptr` after moving from it, and why
