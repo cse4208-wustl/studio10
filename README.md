@@ -24,7 +24,7 @@ Record your answers in `ANSWERS.md` as you work. Include the names of everyone w
 
    The repo already includes a starter `studio10.cpp` and a `Makefile`. Update them as needed so the repo builds an executable named `studio10`.
 
-   We will define a class that imitates the shared_ptr class. Add a header file and source file for this class that has:
+   Add a header file and source file for this class that has:
 
    - a `static` member variable of type `size_t` initialized to `0` that tracks how many objects of the class have been constructed
    - a non-static member variable of type `size_t` that will be used as a numeric identifier for this object.
