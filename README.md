@@ -79,13 +79,33 @@ Record your answers in `ANSWERS.md` as you work. Include the names of everyone w
 
 7. Remove the contents of `main` except for the statement at the end that returns a success value.
 
-   In the source file where you define `main`, define a function that takes no parameters, declares a `unique_ptr` to your class type, initializes it with the address of an object of your class type returned by `new`, and returns that `unique_ptr` by value.
+    In the source file where you define `main`, define a function that takes no parameters, declares a `unique_ptr` to your class type, initializes it with the address of an object of your class type returned by `new`, and returns that `unique_ptr` by value.
 
-   In that same source file, define another function that takes a reference to a `unique_ptr` to your class type and uses it to invoke the public member function of the object to which the `unique_ptr` points.
+    In `main`, declare a `unique_ptr` to your class type and initialize it with a call to that function. Declare a second `unique_ptr` of the same type, and attempt to initialize it from the first `unique_ptr`.
 
-   In `main`, declare a `unique_ptr` to your class type and initialize it with a call to the first function. Pass that `unique_ptr` into a call to the second function, and then use the `unique_ptr` to invoke the public member function of the object to which it points.
+    Try to build the program. In your answers:
+  - show the compiler error you get
+  - briefly explain, in your own words, what that error tells you about how `unique_ptr` treats copying
 
-   Build and run your program. In your answers, show the output the program produced.
+8. Comment out the failed copy-initialization from the previous exercise so the program builds again.
+
+    In the source file where you define `main`, define a function that takes a reference to a `unique_ptr` to your class type and uses it to invoke the public member function of the object to which it points.
+
+    In `main`, just below the commented-out copy-initialization, declare a second `unique_ptr` of the same type and initialize it by moving from the first `unique_ptr` using `std::move`.
+
+    Pass the second `unique_ptr` into the function you just defined to invoke the public member function through it, then attempt to do the same using the first `unique_ptr`.
+
+    Build and run your program. In your answers:
+  - show the output your program produced
+  - explain what happened when you tried to use the first `unique_ptr` after moving from it, and why
+
+9. Remove the contents of `main` except for the statement at the end that returns a success value.
+
+    In `main`, declare a `unique_ptr` to your class type inside a nested block (a pair of braces within `main`), initialized with the address of an object of your class type returned by `new`. Print a message immediately before and after the closing brace of that block.
+
+    Build and run your program. In your answers:
+  - show the output your program produced
+  - explain what caused the destructor to run, and contrast this with the `delete` calls you had to write explicitly in Exercise 3
 
 ## Deliverables
 
