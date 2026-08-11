@@ -24,10 +24,10 @@ Record your answers in `ANSWERS.md` as you work. Include the names of everyone w
 
    The repo already includes a starter `studio10.cpp` and a `Makefile`. Update them as needed so the repo builds an executable named `studio10`.
 
-   Add a header file and source file for a class that has:
+   We will define a class that imitates the shared_ptr class. Add a header file and source file for this class that has:
 
    - a `static` member variable of type `size_t` initialized to `0` that tracks how many objects of the class have been constructed
-   - a non-static member variable of type `size_t` that, together with the address stored in `this`, identifies the object
+   - a non-static member variable of type `size_t` that will be used as a numeric identifier for this object.
    - a default constructor that initializes the non-static member variable with the current value of the static member variable, increments the static member variable, and prints a message indicating that the default constructor was called along with the member value and object address
    - a copy constructor that initializes the non-static member variable from the source object's corresponding member value, increments the static member variable, and prints a message indicating that the copy constructor was called along with the member value and object address
    - a destructor that prints a message indicating that it was called along with the member value and object address, without modifying the static member variable
