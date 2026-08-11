@@ -84,8 +84,8 @@ Record your answers in `ANSWERS.md` as you work. Include the names of everyone w
     In `main`, declare a `unique_ptr` to your class type and initialize it with a call to that function. Declare a second `unique_ptr` of the same type, and attempt to initialize it from the first `unique_ptr`.
 
     Try to build the program. In your answers:
-  - show the compiler error you get
-  - briefly explain, in your own words, what that error tells you about how `unique_ptr` treats copying
+   - show the compiler error you get
+   - briefly explain, in your own words, what that error tells you about how `unique_ptr` treats copying
 
 8. Comment out the failed copy-initialization from the previous exercise so the program builds again.
 
