@@ -87,22 +87,6 @@ Record your answers in `ANSWERS.md` as you work. Include the names of everyone w
 
    Build and run your program. In your answers, show the output the program produced.
 
-## Optional Enrichment
-
-1. Remove the contents of `main` except for the statement at the end that returns a success value.
-
-   In `main`, declare a standard `allocator` parameterized with your class type, call its `allocate` member function to reserve enough memory for a specific number of objects of your class type, and store the returned address in a pointer to your class type.
-
-   Write a `for` loop that starts at that address and iterates through the memory chunk using placement `new` to invoke the default constructor at each object location. Then write a similar `for` loop that iterates through the memory chunk and explicitly invokes the destructor at each object location.
-
-   Compile and run your program. In your answers, show the output it produced.
-
-2. After the loop that invokes constructors on the first chunk of allocated memory, call the allocator's `allocate` member function again to reserve enough memory for the same number of objects and store the returned address in another pointer to your class type.
-
-   Pass pointers to the start and just past the end of the first chunk of memory, along with the start of the second chunk of memory, into `uninitialized_copy` so that copy constructors are invoked for each object location in the second chunk. Then write a `for` loop that iterates through the second chunk of memory and explicitly invokes the destructor at each object location.
-
-   Compile and run your program. In your answers, show the output it produced.
-
 ## Deliverables
 
 Commit and push all modified and added files, including `ANSWERS.md`, to the repo.
