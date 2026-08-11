@@ -95,11 +95,12 @@ Record your answers in `ANSWERS.md` as you work. Include the names of everyone w
 
     Pass the second `unique_ptr` into the function you just defined to invoke the public member function through it, then attempt to do the same using the first `unique_ptr`.
 
-    Build and run your program. In your answers:
-  - show the output your program produced
-  - explain what happened when you tried to use the first `unique_ptr` after moving from it, and why
+   Build and run your program. In your answers:
+   
+   - show the output your program produced
+   - explain what happened when you tried to use the first `unique_ptr` after moving from it, and why
 
-9. Remove the contents of `main` except for the statement at the end that returns a success value.
+10. Remove the contents of `main` except for the statement at the end that returns a success value.
 
     In `main`, declare a `unique_ptr` to your class type inside a nested block (a pair of braces within `main`), initialized with the address of an object of your class type returned by `new`. Print a message immediately before and after the closing brace of that block.
 
